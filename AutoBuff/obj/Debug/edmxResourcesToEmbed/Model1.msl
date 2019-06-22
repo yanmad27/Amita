@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AMITA_DATABASEModelStoreContainer" CdmEntityContainer="AMITA_DATABASEEntities">
+    <EntitySetMapping Name="ALLOWs">
+      <EntityTypeMapping TypeName="AMITA_DATABASEModel.ALLOW">
+        <MappingFragment StoreEntitySet="ALLOW">
+          <ScalarProperty Name="MacAddress" ColumnName="MacAddress" />
+          <ScalarProperty Name="PCName" ColumnName="PCName" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XAIKEMADEOXINPHEPs">
+      <EntityTypeMapping TypeName="AMITA_DATABASEModel.XAIKEMADEOXINPHEP">
+        <MappingFragment StoreEntitySet="XAIKEMADEOXINPHEP">
+          <ScalarProperty Name="MacAddress" ColumnName="MacAddress" />
+          <ScalarProperty Name="PCName" ColumnName="PCName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

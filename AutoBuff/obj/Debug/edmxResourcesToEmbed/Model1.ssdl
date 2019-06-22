@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AMITA_DATABASEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ALLOW">
+    <Key>
+      <PropertyRef Name="MacAddress" />
+      <PropertyRef Name="PCName" />
+    </Key>
+    <Property Name="MacAddress" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="PCName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ExpirationDate" Type="date" />
+  </EntityType>
+  <EntityType Name="XAIKEMADEOXINPHEP">
+    <Key>
+      <PropertyRef Name="MacAddress" />
+      <PropertyRef Name="PCName" />
+    </Key>
+    <Property Name="MacAddress" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="PCName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="AMITA_DATABASEModelStoreContainer">
+    <EntitySet Name="ALLOW" EntityType="Self.ALLOW" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="XAIKEMADEOXINPHEP" EntityType="Self.XAIKEMADEOXINPHEP" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
